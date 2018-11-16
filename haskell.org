@@ -1,0 +1,11 @@
+* Running haskell                                           :scripting:stack:
+
+  If you want to run a file as a script, you can put this on top of your `hs` file
+
+  #+begin_src haskell
+    #!/usr/bin/env stack
+    -- stack --resolver lts-9.13 --install-ghc runghc --package script-dependency
+  #+end_src
+
+  where ~script-dependency~ is any package you want to use in the script
+  and of course you can change the `lts` as well
